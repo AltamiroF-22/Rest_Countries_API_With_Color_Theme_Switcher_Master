@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com) 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-app-built-with-react-sass-with-theme-switcher-yze3mS0pA3](https://www.frontendmentor.io/solutions/responsive-app-built-with-react-sass-with-theme-switcher-yze3mS0pA3) 
+- Live Site URL: [https://snazzy-malasada-b4cc16.netlify.app/](https://snazzy-malasada-b4cc16.netlify.app/)
 
 ### Built with
 
