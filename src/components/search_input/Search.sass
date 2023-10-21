@@ -1,0 +1,27 @@
+@use '../../sass/_variables'
+@use '../../sass/_mixins'
+
+.search
+    display: flex
+    height: 30px
+    align-items: center
+    background-color: variables.$dark-blue
+    box-shadow: 0rem .1rem .7rem #00000017
+    justify-content: start
+    width: 370px
+    gap: 20px
+    padding: 20px 25px
+    border-radius: 5px
+    @include mixins.responsive-max-width-850px
+        width: 64%
+        
+    @include mixins.responsive-max-width-600px
+        width: 100%
+        padding: 25px 20px
+
+    input
+        background: transparent
+        border: none
+        outline: none
+        color: variables.$white
+        width: 100%

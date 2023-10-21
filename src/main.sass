@@ -1,0 +1,50 @@
+@use './sass/_variables'
+@use './sass/_mixins'
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Nunito Sans', sans-serif
+  
+body
+  background: variables.$very-dark-blue
+  color: variables.$very-light-gray
+
+
+ 
+.loading
+  width: 100px
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+.light-theme 
+  background-color: variables.$very-light-gray
+  color: variables.$very-dark-blue-light-text
+
+.App
+  min-height: 100vh
+  @include mixins.responsive-max-width-600px
+    min-height: 125vh
+
+
+
+.light-theme nav, 
+.light-theme .toggle-theme
+  background: variables.$very-light-gray
+  color: variables.$very-dark-blue-light-text
+
+.light-theme .country-card,
+.light-theme .search,
+.light-theme .search input,
+.light-theme .filter,
+.light-theme .back-btn,
+.light-theme .Single-country .link-redu 
+  background-color: variables.$white
+  color: variables.$very-dark-blue-light-text
+
+
+.light-theme .Single-country .link-redu:hover
+  border-color: variables.$dark-gray 

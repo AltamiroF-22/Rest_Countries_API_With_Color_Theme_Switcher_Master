@@ -1,0 +1,24 @@
+@use '../.././sass/_variables'
+@use '../.././sass/_mixins'
+    
+nav
+    height: 70px
+    background-color: variables.$dark-blue
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto
+    padding: 0 8%
+    color: variables.$very-light-gray
+    box-shadow: 0rem .1rem .7rem #00000017
+    @include mixins.responsive-max-width-600px
+        h2
+            font-size: 1.2rem
+    .toggle-theme
+        background: transparent
+        cursor: pointer
+        border: none
+        display: flex
+        font-weight: 600
+        color: variables.$very-light-gray
+        gap: 10px

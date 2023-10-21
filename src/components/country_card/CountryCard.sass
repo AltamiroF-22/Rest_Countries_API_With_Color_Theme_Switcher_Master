@@ -1,0 +1,28 @@
+@use '../../sass/_mixins'
+@use '../../sass/_variables'
+
+.country-card
+    width: 240px
+    height: 300px
+    border-radius: 10px 
+    overflow: hidden
+    background-color: variables.$dark-blue
+    box-shadow: 0rem .1rem .7rem #00000017
+    cursor: pointer
+    @include mixins.responsive-max-width-600px
+        width: 100%
+        min-height: 400px
+
+    .flag-img img
+        width: 100%
+        aspect-ratio: 16 / 9
+        object-fit: cover
+        border-bottom: solid 1px #0000001d
+
+    .info
+        padding-left: 20px
+        h5
+            font-size: 1.2rem
+            margin: 15px 0
+        p
+            margin: 3px 0

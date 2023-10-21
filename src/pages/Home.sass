@@ -1,0 +1,31 @@
+@use '../sass/_mixins'
+@use '../sass/_variables'
+
+.search-filter
+    padding: 0 8%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 150px
+    @include mixins.responsive-max-width-600px
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        gap: 30px
+        padding: 100px 8%
+.all-countries
+    display: flex
+    flex-wrap: wrap
+    padding: 0 8%
+    justify-content: space-between
+    gap: 40px
+    @include mixins.responsive-max-width-850px
+        justify-content: center
+        gap: 20px
+    @include mixins.responsive-max-width-600px
+        width: 95%
+        gap: 40px
+        margin: 0 auto
+.link
+    text-decoration: none
+    color: variables.$very-light-gray
